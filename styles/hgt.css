@@ -25,6 +25,7 @@
  */
 
 .hgt-body {
+  overflow: auto;
   font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
   color: #333;
   background: #fff;
@@ -188,12 +189,12 @@
   word-wrap: break-word;
 }
 
-.hgt-content h1,
-.hgt-content h2,
-.hgt-content h3,
-.hgt-content h4,
-.hgt-content h5,
-.hgt-content h6 {
+.hgt-content > h1,
+.hgt-content > h2,
+.hgt-content > h3,
+.hgt-content > h4,
+.hgt-content > h5,
+.hgt-content > h6 {
   box-sizing: border-box;
   position: relative;
   margin-top: 1em;
@@ -202,34 +203,34 @@
   line-height: 1.4;
 }
 
-.hgt-content h1 {
+.hgt-content > h1 {
   padding-bottom: 0.3em;
   font-size: 2.25em;
   line-height: 1.2;
   border-bottom: 1px solid #EEE;
 }
 
-.hgt-content h2 {
+.hgt-content > h2 {
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225;
   border-bottom: 1px solid #EEE;
 }
 
-.hgt-content h3 {
+.hgt-content > h3 {
   font-size: 1.5em;
   line-height: 1.43;
 }
 
-.hgt-content h4 {
+.hgt-content > h4 {
   font-size: 1.25em;
 }
 
-.hgt-content h5 {
+.hgt-content > h5 {
   font-size: 1em;
 }
 
-.hgt-content h6 {
+.hgt-content > h6 {
   font-size: 1em;
   color: #777;
 }
