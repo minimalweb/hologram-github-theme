@@ -26,18 +26,11 @@
 
 .hgt-body {
   overflow: auto;
-  font: 13px/1.4 Helvetica,arial,freesans,clean,sans-serif;
-  color: #333;
-  background: #fff;
 }
 
-.hgt-pagehead-nav a, .hgt-content a, .hgt-footer a {
+.hgt-pagehead-nav a, .hgt-footer a {
   color: #4183C4;
   text-decoration: none;
-}
-
-.hgt-content a:hover, .hgt-footer a:hover {
-  text-decoration: underline;
 }
 
 .hgt-container {
@@ -87,7 +80,8 @@
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #EEE;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background-color: white;
 }
 
 .hgt-pagehead-title {
@@ -182,76 +176,23 @@
   width: 228px;
 }
 
-.hgt-content {
-  font-family: "Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  word-wrap: break-word;
-}
-
-.hgt-content > h1,
-.hgt-content > h2,
-.hgt-content > h3,
-.hgt-content > h4,
-.hgt-content > h5,
-.hgt-content > h6 {
-  box-sizing: border-box;
-  position: relative;
-  margin-top: 1em;
-  margin-bottom: 16px;
-  font-weight: bold;
-  line-height: 1.4;
-}
-
-.hgt-content > h1 {
-  padding-bottom: 0.3em;
-  font-size: 2.25em;
-  line-height: 1.2;
-  border-bottom: 1px solid #EEE;
-}
-
-.hgt-content > h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.75em;
-  line-height: 1.225;
-  border-bottom: 1px solid #EEE;
-}
-
-.hgt-content > h3 {
-  font-size: 1.5em;
-  line-height: 1.43;
-}
-
-.hgt-content > h4 {
-  font-size: 1.25em;
-}
-
-.hgt-content > h5 {
-  font-size: 1em;
-}
-
-.hgt-content > h6 {
-  font-size: 1em;
-  color: #777;
-}
-
-.hgt-content p,
-.hgt-content blockquote,
-.hgt-content dl,
-.hgt-content table,
+.hgt-content > p,
+.hgt-content > blockquote,
+.hgt-content > dl,
+.hgt-content > table,
 .hgt-content pre {
   box-sizing: border-box;
   margin: 0 0 16px;
 }
 
-.hgt-content ul {
+.hgt-content > ul {
   list-style: disc;
   box-sizing: border-box;
   margin: 0 0 16px;
   padding-left: 1em;
 }
 
-.hgt-content ol {
+.hgt-content > ol {
   list-style: decimal;
   box-sizing: border-box;
   margin: 0 0 16px;
@@ -303,9 +244,10 @@
 
 .hgt-content .codeExample,
 .hgt-content .jsExample {
-  border: 1px solid #EEE;
+  border: 1px solid rgba(0,0,0,.1);
   border-radius: 4px;
-  margin: 10px 0;
+  margin: 10px 0 30px;
+  background-color: white;
 }
 
 .hgt-content .jsExample {
@@ -325,22 +267,23 @@
   display: block;
 }
 
-/* .hgt-content .codeExample:before { */
-/*   content: "Example"; */
-/*   background-color: #f9f9f9; */
-/*   width: 50px; */
-/*   top: -1px; */
-/*   left: -1px; */
-/*   font-size: 12px; */
-/* } */
-/* .hgt-content .jsExample:before { */
-/*   content: "JS Example"; */
-/*   background-color: #f9f9f9; */
-/*   width: 65px; */
-/*   top: -11px; */
-/*   left: -11px; */
-/*   font-size: 12px; */
-/* } */
+.hgt-content .codeExample:before {
+ content: "Example";
+ background-color: #f9f9f9;
+ width: 50px;
+ top: -1px;
+ left: -1px;
+ font-size: 12px;
+}
+
+.hgt-content .jsExample:before {
+ content: "JS Example";
+ background-color: #f9f9f9;
+ width: 65px;
+ top: -11px;
+ left: -11px;
+ font-size: 12px;
+}
 
 .hgt-content .exampleOutput {
   padding: 16px;
